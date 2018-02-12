@@ -1,0 +1,17 @@
+del
+mkdir mutt
+vim muttrc
+search 
+cd 
+edit muttrc
+open_with vim
+rename 
+rename .muttrc
+help
+mkdir 
+mkdir .mutt
+rename muttrc
+rename wall.jpg
+delete
+n
+new
