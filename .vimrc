@@ -2,12 +2,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'mhinz/vim-startify'
     Plug 'felikz/ctrlp-py-matcher'
     Plug 'scrooloose/nerdtree'
-"    Plug 'xuyuanp/nerdtree-git-plugin'
+    Plug 'xuyuanp/nerdtree-git-plugin' "git status' for nerdtree
     Plug 'itchyny/vim-cursorword' "underline the word in cursor
     Plug 'danro/rename.vim'
     Plug 'anyakichi/vim-surround' "cs'}
     Plug 'liuchengxu/vim-better-default'
-"    Plug 'haya14busa/incsearch.vim'
+    Plug 'haya14busa/incsearch.vim' "incremental search highlighting
 "    Plug 'easymotion/vim-easymotion'
     Plug 'ntpeters/vim-better-whitespace' "causes trailing on extra whitespace
 "    Plug 'tpope/vim-fugitive'
@@ -19,15 +19,16 @@ call plug#begin('~/.vim/plugged')
 "    Plug 'avakhov/vim-yaml'
 "    Plug 'majutsushi/tagbar'
     Plug 'beautify-web/js-beautify'
-"    Plug 'nightsense/office'
+"    Plug 'nightsense/office' "vim theme
     Plug 'bfrg/vim-cpp-modern'
 "    Plug 'rhysd/vim-clang-format'
-"    Plug 'kana/vim-operator-user'
-"    Plug 'scrooloose/nerdcommenter'
-"    Plug 'altercation/vim-colors-solarized'
-"    Plug 'aradunovic/perun.vim'
-"    Plug 'christoomey/vim-tmux-navigator'
-"    Plug 'sjl/badwolf'
+"    Plug 'kana/vim-operator-user' "create vim operators/functions
+"    Plug 'scrooloose/nerdcommenter' "functions for comments
+"    Plug 'altercation/vim-colors-solarized' "universal text color scheme?
+"    Plug 'aradunovic/perun.vim' "Neovim (Vim GUI only) colorscheme based on the default desert.vim
+"    Plug 'christoomey/vim-tmux-navigator' "Seamless navigation between tmux panes and vim splits
+"    Plug 'sjl/badwolf' " Color scheme...
+    Plug 'sheerun/vim-polyglot' " Collection of Language packs for vim
 call plug#end()
 
 runtime! plugin/default.vim " runs default.vim before .vimrc
