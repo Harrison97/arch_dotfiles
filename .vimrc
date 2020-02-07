@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
 "    Plug 'sjl/badwolf'
 call plug#end()
 
+runtime! plugin/default.vim " runs default.vim before .vimrc
 
 "let mapleader = '`'
 
@@ -74,10 +75,14 @@ call plug#end()
 "set foldmethod=syntax
 "set hlsearch
 
-set tabstop=4
-set softtabstop=4
-"set shiftwidth=4
-"set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+au FileType python set tabstop=2
+au FileType python set softtabstop=2
+au FileType python set shiftwidth=2
+au FileType python set expandtab
 
 "filetype indent on
 "set textwidth=80
@@ -99,31 +104,31 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 
 "let g:tagbar_type_go = {
-"	\ 'ctagstype' : 'go',
-"	\ 'kinds'     : [
-"		\ 'p:package',
-"		\ 'i:imports:1',
-"		\ 'c:constants',
-"		\ 'v:variables',
-"		\ 't:types',
-"		\ 'n:interfaces',
-"		\ 'w:fields',
-"		\ 'e:embedded',
-"		\ 'm:methods',
-"		\ 'r:constructor',
-"		\ 'f:functions'
-"	\ ],
-"	\ 'sro' : '.',
-"	\ 'kind2scope' : {
-"		\ 't' : 'ctype',
-"		\ 'n' : 'ntype'
-"	\ },
-"	\ 'scope2kind' : {
-"		\ 'ctype' : 't',
-"		\ 'ntype' : 'n'
-"	\ },
-"	\ 'ctagsbin'  : 'gotags',
-"	\ 'ctagsargs' : '-sort -silent'
+"   \ 'ctagstype' : 'go',
+"   \ 'kinds'     : [
+"       \ 'p:package',
+"       \ 'i:imports:1',
+"       \ 'c:constants',
+"       \ 'v:variables',
+"       \ 't:types',
+"       \ 'n:interfaces',
+"       \ 'w:fields',
+"       \ 'e:embedded',
+"       \ 'm:methods',
+"       \ 'r:constructor',
+"       \ 'f:functions'
+"   \ ],
+"   \ 'sro' : '.',
+"   \ 'kind2scope' : {
+"       \ 't' : 'ctype',
+"       \ 'n' : 'ntype'
+"   \ },
+"   \ 'scope2kind' : {
+"       \ 'ctype' : 't',
+"       \ 'ntype' : 'n'
+"   \ },
+"   \ 'ctagsbin'  : 'gotags',
+"   \ 'ctagsargs' : '-sort -silent'
 "\ }
 "
 "
